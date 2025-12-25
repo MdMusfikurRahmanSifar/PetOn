@@ -1,9 +1,9 @@
 import logo from './logo.svg';
-import husky from './lovely-pet-portrait-isolated.jpg'
-import golden_retriever from './mitchell-luo-f0Y_FDt0xJo-unsplash.jpg'
-import cat from './adorable-cat-lifestyle.jpg'
-import rabbit from './full-shot-kid-playing-with-dog.jpg'
-import dog from './38708534_8612017.png'
+import husky from './husky-dog.jpg'
+
+import cat from './adorable-cat.jpg'
+import rabbit from './rabbit.jpg'
+import dog from './dog.png'
 import group from './group-cute-animals-isolated-white-background.png'
 import search from './search_icon.svg'
 import users_icon from './users_icon.svg'
@@ -18,6 +18,8 @@ import facebook_logo from './facebook_logo.svg'
 import instagram_logo from './instagram_logo.svg'
 import twitter_logo from './twitter_logo.svg'
 import gmail_logo from './gmail_logo.svg'
+import check_icon from './check_icon.svg'
+import golden_retriever from './golden.jpg'
 
 
 
@@ -42,7 +44,9 @@ export const assets = {
   facebook_logo,
   instagram_logo,
   twitter_logo,
-  gmail_logo
+  gmail_logo,
+  check_icon
+  
 }
 
 
@@ -87,7 +91,7 @@ export const menuLinks = [
         "name": "Luna",
         "species": "Cat",
         "breed": "Persian",
-        "image": "",
+        "image": assets.cat,
         "age": 2,
         "category": "Small",
         "behaviour": "Calm",
@@ -106,7 +110,7 @@ export const menuLinks = [
         "name": "Rocky",
         "species": "Dog",
         "breed": "Husky",
-        "image": "",
+        "image": assets.husky,
         "age": 4,
         "category": "Large",
         "behaviour": "Protective",
@@ -125,7 +129,7 @@ export const menuLinks = [
         "name": "Milo",
         "species": "Rabbit",
         "breed": "Holland Lop",
-        "image": "",
+        "image": assets.rabbit,
         "age": 1,
         "category": "Small",
         "behaviour": "Gentle",

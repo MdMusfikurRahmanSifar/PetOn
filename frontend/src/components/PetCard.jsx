@@ -20,7 +20,7 @@ const PetCard = ({pet}) => {
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {pet.isAvailable && (
-          <p className="absolute top-4 left-4 bg-primary/90 text-white text-xs px-2.5 py-1">
+          <p className="absolute top-4 left-4 bg-blue-600 text-white text-xs px-2.5 py-1">
             Available Now
           </p>
         )}
@@ -58,7 +58,7 @@ const PetCard = ({pet}) => {
           </div>
           <div className="flex items-center text-sm text-muted-foreground">
             <img src={assets.smile} alt="" className="h-4 mr-2" />
-            <span>{pet.active} Seats</span>
+            <span>{pet.active}  </span>
           </div>
           <div className="flex items-center text-sm text-muted-foreground">
             <img src={assets.location_icon} alt="" className="h-4 mr-2" />
