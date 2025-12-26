@@ -6,8 +6,15 @@ import Home from './pages/Home';
 import Pets from './pages/Pets';
 import PetDetails from './pages/PetDetails';
 import Footer from './components/Footer';
-
 import MyBookings from './pages/MyBookings';
+
+
+
+import Layout from './pages/owner/Layout';
+import Dashboard from './pages/owner/Dashboard';
+import AddPet from './pages/owner/AddPet';
+import ManageBookings from './pages/owner/ManageBookings';
+import ManagePets from './pages/owner/ManagePets';
 
 
 export const App = () => {
@@ -24,6 +31,15 @@ export const App = () => {
         <Route path='/pets' element={<Pets />} />
         <Route path='/petDetails/:id' element={<PetDetails />} />
         <Route path='/my-bookings' element={<MyBookings />} />
+
+        <Route path='/owner' element={<Layout />}>
+          <Route path='dashboard' element={<Dashboard />} />
+          <Route path='add-pet' element={<AddPet />} />
+          <Route path='manage-bookings' element={<ManageBookings />} />
+          <Route path='manage-pets' element={<ManagePets />} />
+
+
+        </Route>
       </Routes>
 
       {!isOwnerPath && <Footer />}

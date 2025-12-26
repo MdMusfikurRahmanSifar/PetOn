@@ -39,7 +39,7 @@ const PetDetails = () => {
         {/* Left: Car Image & Details */}
         <div className="lg:col-span-2">
           <img src={pet.image}
-            alt="car"
+            alt="pet"
             className="w-full h-auto md:max-h-100 object-cover rounded-xl mb-6 shadow-md"/>
           <div
             className="space-y-6">

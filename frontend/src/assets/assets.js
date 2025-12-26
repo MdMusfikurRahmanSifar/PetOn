@@ -20,6 +20,9 @@ import twitter_logo from './twitter_logo.svg'
 import gmail_logo from './gmail_logo.svg'
 import check_icon from './check_icon.svg'
 import golden_retriever from './golden.jpg'
+import filter from './filter_icon.svg'
+import calender_icon_colored from './calendar_icon_colored.svg'
+import location_icon_colored from './location_icon_colored.svg'
 
 
 
@@ -45,7 +48,10 @@ export const assets = {
   instagram_logo,
   twitter_logo,
   gmail_logo,
-  check_icon
+  check_icon,
+  filter,
+  calender_icon_colored,
+  location_icon_colored
   
 }
 
@@ -61,8 +67,18 @@ export const menuLinks = [
     name: 'Pets', path :'/pets'
   },
   {
-    name: 'My Bookings', path :'/my-boolings'
+    name: 'My Bookings', path :'/my-bookings'
   }, ];
+
+
+
+export const dummyUserData = {
+  "_id": "6847f7cab3d8daecdb517095",
+  "name": "Musfique",
+  "email": "admin@example.com",
+  "role": "owner",
+  "image": "",
+}
 
 
   export const dummyPetData = [
@@ -72,7 +88,7 @@ export const menuLinks = [
         "name": "Buddy",
         "species": "Dog",
         "breed": "Golden Retriever",
-        "image": "",
+        "image": golden_retriever,
         "age": 3,
         "category": "Large",
         "behaviour": "Friendly",
@@ -143,3 +159,51 @@ export const menuLinks = [
         "createdAt": "2025-04-17T06:15:47.318Z",
     }
 ];
+
+export const dummyBookingsData = [
+  {
+    "_id": "bp001",
+    "pet": dummyPetData[0], // Buddy
+    "user": "6847f7cab3d8daecdb517095",
+    "owner": "67fe3467ed8a8fe17d0ba6e2",
+    "pickupDate": "2025-06-13T09:00:00.000Z",
+    "returnDate": "2025-06-13T13:00:00.000Z",
+    "status": "confirmed",
+    "price": 2000,
+    "createdAt": "2025-06-10T12:57:48.244Z",
+  },
+  {
+    "_id": "bp002",
+    "pet": dummyPetData[1], // Luna
+    "user": "6847f7cab3d8daecdb517095",
+    "owner": "67fe3467ed8a8fe17d0ba6e2",
+    "pickupDate": "2025-06-12T10:00:00.000Z",
+    "returnDate": "2025-06-12T12:00:00.000Z",
+    "status": "pending",
+    "price": 700,
+    "createdAt": "2025-06-10T12:45:25.613Z",
+  },
+  {
+    "_id": "bp003",
+    "pet": dummyPetData[2], // Rocky
+    "user": "6847f7cab3d8daecdb517095",
+    "owner": "67fe3467ed8a8fe17d0ba6e2",
+    "pickupDate": "2025-06-11T08:00:00.000Z",
+    "returnDate": "2025-06-11T14:00:00.000Z",
+    "status": "cancelled",
+    "price": 3600,
+    "createdAt": "2025-06-10T09:55:06.379Z",
+  },
+  {
+    "_id": "bp004",
+    "pet": dummyPetData[3], // Milo
+    "user": "6847f7cab3d8daecdb517095",
+    "owner": "67fe3467ed8a8fe17d0ba6e2",
+    "pickupDate": "2025-06-14T15:00:00.000Z",
+    "returnDate": "2025-06-14T17:00:00.000Z",
+    "status": "confirmed",
+    "price": 500,
+    "createdAt": "2025-06-10T09:44:25.410Z",
+  }
+];
+
