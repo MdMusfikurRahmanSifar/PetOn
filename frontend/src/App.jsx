@@ -15,6 +15,7 @@ import Dashboard from './pages/owner/Dashboard';
 import AddPet from './pages/owner/AddPet';
 import ManageBookings from './pages/owner/ManageBookings';
 import ManagePets from './pages/owner/ManagePets';
+import Login from './components/Login';
 
 
 export const App = () => {
@@ -24,6 +25,7 @@ export const App = () => {
 
   return (
     <>
+      {showLogin && <Login setShowLogin={setShowLogin}/>}
       {!isOwnerPath && <Navbar setShowLogin={setShowLogin}/>}
 
       <Routes>

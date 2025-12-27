@@ -34,7 +34,7 @@ export const Navbar = ({setShowLogin}) => {
 
         <div className='flex max-sm:flex-col items-start sm:items-center gap-6 '>
           <button onClick={()=>navigate('/owner')} className='cursor-pointer'>Dashboard</button>
-          <button onClick={setShowLogin(true)} className='px-8 py-2 rounded-lg text-sm text-black bg-[#31E1F7] hover:opacity-70 transition-all cursor-pointer'>Login</button>
+          <button onClick={()=>setShowLogin(true)} className='px-8 py-2 rounded-lg text-sm text-black bg-[#31E1F7] hover:opacity-70 transition-all cursor-pointer'>Login</button>
         </div>
             
       </div>
