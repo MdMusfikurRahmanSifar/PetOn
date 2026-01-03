@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 
 import Title from '../../components/owner/Title'
-import { useAppContext } from '../../context/appContext'
+import { useAppContext } from '../../context/AppContext'
 import toast from 'react-hot-toast'
 
 const ManageBookings = () => {
@@ -106,7 +106,7 @@ const ManageBookings = () => {
                     <select
                       onChange={(e) =>changeBookingStatus(booking._id, e.target.value)}
                       value={booking.status}
-                      className="px-2 py-1.5 mt-1 text-white border border-borderColor rounded-md outline-none">
+                      className="px-2 py-1.5 mt-1 text-white border border-white bg-black rounded-md outline-none">
                       <option value="pending">Pending</option>
                       <option value="cancelled">Cancelled</option>
                       <option value="confirmed">Confirmed</option>

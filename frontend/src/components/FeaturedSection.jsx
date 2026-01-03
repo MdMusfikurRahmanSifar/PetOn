@@ -4,7 +4,7 @@ import Title from './Title'
 import PetCard from './PetCard'
 import { assets } from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
-import { useAppContext } from '../context/appContext'
+import { useAppContext } from '../context/AppContext'
 
 const FeaturedSection = () => {
 

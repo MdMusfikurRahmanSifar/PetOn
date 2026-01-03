@@ -32,7 +32,7 @@ const Testimonial = () => {
       className="py-28 px-6 md:px-16 lg:px-24 xl:px-44">
       <Title
         title="What Our Customers Say"
-        subTitle="Discover why discerning car-fanatics from around the globe choose CarRental for meeting their expectations."
+        subTitle="Discover why pet lovers from around the country choose petOn for finding their perfect furry companions."
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-18">
         {testimonials.map((testimonial, idx) => (
@@ -55,11 +55,10 @@ const Testimonial = () => {
               {Array(5)
                 .fill(0)
                 .map((_, index) => (
-                  <>
-                    <img src={assets.star_icon} alt="star-icon" key={index} />
-                    {/* <Star key={index} filled={testimonial.rating > index} /> */}
-                  </>
-                ))}
+                  <img src={assets.star_icon} alt="star-icon" key={index} />
+                    ))}
+
+                    
             </div>
             <p className="text-gray-500 max-w-90 mt-4 font-light">
               "{testimonial.testimonial}"

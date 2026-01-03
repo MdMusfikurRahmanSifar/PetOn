@@ -4,7 +4,7 @@ import { assets} from '../assets/assets'
 import { useState } from 'react'
 import PetCard from '../components/PetCard'
 import { useSearchParams } from 'react-router-dom'
-import { useAppContext } from '../context/appContext'
+import { useAppContext } from '../context/AppContext'
 import toast from 'react-hot-toast'
 
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom';
 import { assets } from '../assets/assets';
 import Loader from '../components/Loader';
-import { useAppContext } from '../context/appContext';
+import { useAppContext } from '../context/AppContext';
 import toast from 'react-hot-toast';
 
 
@@ -24,7 +24,7 @@ const PetDetails = () => {
       const {data} = await axios.post('/api/bookings/create-booking',{ pet : id, pickupDate, returnDate });
       if(data.success){
         toast.success(data.message);
-        navigate('/user-bookings');
+        navigate('/my-bookings');
       }
       else{
         toast.error(data.message);
@@ -36,6 +36,8 @@ const PetDetails = () => {
     }
     
   }
+
+  
 
 
   useEffect(() => {
@@ -49,11 +51,11 @@ const PetDetails = () => {
     <div className="px-6 md:px-16 lg:px-24 xl:px-32 mt-16">
       <button
         onClick={() => navigate(-1)}
-        className="flex items-center gap-2 mb-6 text-gray-500 cursor-pointer">
+        className="flex items-center gap-2 mb-6 text-gray-500 cursor-pointer ">
         <img
           src={assets.arrow_right}
           alt="arrow-icon"
-          className="rotate-180 opacity-100"
+          className="rotate-180 opacity-100 bg-[#FFD369] p-1 rounded-full w-6 h-6 "
         />
         <p className='text-[#FFD369]'>Back to all pets</p>
       </button>

@@ -70,7 +70,17 @@ export async function createBooking(req, res) {
     // Calculate price based on pickup and return dates
     const picked = new Date(pickupDate);
     const returned = new Date(returnDate);
-    const noOfDays = Math.ceil((returned - picked) / (1000 * 60 * 60 * 24));
+    const noOfDays = Math.ceil(((returned - picked) / (1000 * 60 * 60 * 24))+1);
+    if (noOfDays <= 0) {
+      return res.json({
+        success: false, 
+        message: "Return date must be after pickup date",
+      });
+    }
+    
+    
+    
+    
     const price = petData.pricePerDay * noOfDays;
 
     // store the data in DB

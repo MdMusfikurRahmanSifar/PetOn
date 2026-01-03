@@ -12,7 +12,7 @@ const NavbarOwner = () => {
       <Link to="/">
         <img src={assets.logo} alt="logo" className="h-7" />
       </Link>
-      <p className="">Welcome, {user?.name || "Owner"}</p>
+      <p className="text-white ">Welcome, <span className='text-2xl font-bold text-green-600'>{user?.name || "Owner"}</span></p>
     </div>
   )
 }

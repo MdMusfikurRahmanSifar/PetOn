@@ -84,7 +84,7 @@ const AddPet = () => {
       <form
         onSubmit={handleSubmit}
         className="flex flex-col gap-5 text-gray-500 text-sm mt-6 max-w-xl">
-        {/* CAR IMAGE */}
+        {/* Pet IMAGE */}
         <div className="flex items-center gap-2 w-full">
           <label htmlFor="pet-image">
             <img
@@ -154,7 +154,7 @@ const AddPet = () => {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label>Breed</label>
+            <label className='text-white'>Breed</label>
             <input
               className="px-3 py-2 mt-1 border border-[#FFD369] rounded-md outline-none"
               value={pet.breed}
@@ -165,7 +165,7 @@ const AddPet = () => {
             />
           </div>
         </div>
-        {/* Car Behaviour, Energy, training , diet, category*/}
+        {/* Pet Behaviour, Energy, training , diet, category*/}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex flex-col w-full">
             <label className='text-white'>Behaviour</label>
